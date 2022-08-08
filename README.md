@@ -1,117 +1,32 @@
-Ethereum File Share Client &middot; [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/jaykch/ethereum-file-share/blob/master/LICENSE)
-=======
-  <h3 align="center">Check out the demo on youtube</h3>
+# SANITIVISE
+### Under development PoC of a medical data-sharing solution with a customisable incentive scheme
 
-  <p align="center">
-    An awesome project to upload data on a website and authenticating it through ethereum smart contracts!
-    <br />
-    This project is a proof of concept for storing University Transcripts on Blockchain.
-    <br />
-    <a href="https://youtu.be/jasEMlDE0Bs">View Demo</a>
-    ·
-    <a href="https://github.com/jaykch/ethereum-data-share/issues">Report Bug</a>
-  </p>
-</p>
+<h2>INTRODUCTION</h2>
+This repository contains an initial base for the aforementioned project.
+The goal of this project is to develop an Ethereum based medical data sharing platform with a customisable incentive scheme, making it more profitable for patients that are willing to participate.
+The architecture would consist of two parts : one on-chain running on Ethereum (for its reliability and usability), and one off-chain using the IPFS protocol.
+By providing data on the platform, a practitionner or research can buy the said data, and the patient remuneration would increase by a dynamically calculated incentive based on the rarity of the data, and provided by a ETH pool filled little by little with fees coming from the transactions.
 
-## Table of Contents
+<h3>1. Current state of the project</h3>
+The current project contains a Ethereum implementation of a file sharing. 
+Even though it doesn't contain any form of our customisable incentive solution yet, it allows for a base to work on and to take inspiration from.
+The <a href="https://github.com/saren-io/ethereum-data-share">base work</a> was made by user jaykch, with the licences conditions available <a href="https://github.com/jaykch/ethereum-file-share/blob/master/LICENSE">here</a>.
 
-* [About the Project](#about-the-project)
-  * [Built With](#built-with)
-* [Getting Started](#getting-started)
-  * [Prerequisites](#prerequisites)
-  * [Installation](#installation)
-* [Deployment](#deployment)
-* [Demo](#demo-and-description)
-* [Author](#author)
-* [License](#license)
-* [Acknowledgements](#acknowledgments)
+<h3>2. Upcoming work</h3>
+Based on the current implementation, we want to incrementially improve it by changing the core logic and adding our desired fonctionalities. 
+This project being part of a research, the possibility of adding the said functionalities will depend on criteria such as time, the capacity of the team, etc.
+They are listed as follows : 
 
-## About The Project
-This project uses React.JS for front end and Ethereum smart contracts for storing the data on a blockchain. Below is the entire process from entering data to uploading it to a private Blockchain and displaying it on a website
+<h4>2.1 Creation of the patient incentive model</h4>
+Based on the research that will be done in the third work package of our proposal, we will adapt the current implementation to support the selected technologies.
+This is the most important part of the project in terms of the innovation we are bringing to the field and the one that is going to take the most time during the project.
 
-* **Admin Panel Login:**  First you enter a password to log into the system to input data. 
-* **Adding Data:**  You input the transcript data into respective fields.
-* **Submitting:**  After adding data, once you click on the submit button, the server uploads the data to a private Ethereum Blockchain using Ganache.
-* **Logging Into View:**  Once the data is uploaded successfully, you log into a separate website with a password to view it.
-* **Fetching Data:**  On login the client fetches data and populates the fields.
-* **Updating:**  Data can be updated on the Blockchain through the admin panel and once confirmation notification is received, the new data can be fetched via the update button on the view window.
+<h4>2.2 Creation of the validator incentive model</h4>
+The patient incentive model serves as a way to motivate patient to share their data by increasing the remuneration they get. 
+This particular model is made to make sure the data has a proper format, by allowing a concurrent bot-free reviewing system of the data with another incentive for doing so.
 
-### Built With
-This project uses the following software and languages
-* [Javascript](https://www.javascript.com/)
-* [Web3](https://github.com/ethereum/web3.js/)
-* [React.JS](https://reactjs.org/)
-* [WebStorm IDE](https://www.jetbrains.com/webstorm/)
-* [Solidity](https://github.com/ethereum/solidity/)
-* [Ganache](https://www.trufflesuite.com/ganache/)
+<h4>2.3 Calibration and details </h4>
+The two models being done at this point, we want to properly calibrate them and tweak the implementation before going further. As such, that step will mostly consists of modifications on files from the 2.1 and 2.2 chapters (which corresponds to work packages 2 and 3 in our project).
 
-## Getting Started
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. 
-See deployment for notes on how to deploy the project on a live system.
-
-### Prerequisites
-Here is the list of all the prerequisites you would need to install on your system in order to run this device
-* Node.js v10.15.3
-```sh
-https://nodejs.org/en/download/
-```
-* npm
-```sh
-https://www.npmjs.com/get-npm
-```
-* Truffle
-```sh
-https://www.trufflesuite.com
-```
-
-* Additional build tools are required to be able to run this project on windows. Run these commands from an 
-administrative shell to install software dependencies:
-<br/><br/>**_Note:_** _You need to install windows build tools version 4.0 or higher_ <br/><br/>
-```sh
-npm install --global --production windows-build-tools
-npm install -g node-gyp
-```
-
-<!-- TABLE OF CONTENTS -->
-
-### Installation
-1. Add all dependencies using npm
-    ```sh
-    npm install
-    ```
-2. Open Ganache and run a private Blockchain
-
-3. Run Truffle to add smart contract to the Blockchain
-    ```sh
-    truffle migrate --reset
-    ```
-    You will get the following feedback from console: 
-    <br/><br/>
-    ![Port Image](assets/migrate.PNG?raw=true "Port")
-    
-4. Run server to start the React.JS client
-    ```sh
-    npm start
-    ```
-**_Note:_** _You need to keep running Ganache for the app to work. Please go through the deployment below to start using your client._
-
-## Deployment
-
-Run 
-```sh
-npm build
-```
-You need to connect to Rinkeby or Ropsten test network if you do not want to spend any money on Ethereum smart contracts via the Mainnet.
-
-## Demo and Description
-Check out the demo on youtube here - <a href="https://youtu.be/jasEMlDE0Bs">View Demo</a> <br/><br/>
-
-## Author
-* **Jay Kumar** - *Complete Development* - [jaykch.com](http://www.jaykch.com/)
-
-## License
-This project is licensed under the MIT License - see the [LICENSE.md](/LICENSE) file for details
-
-## Acknowledgments
-
-* [Boilerplate](https://github.com/dappuniversity/starter_kit) - Boilerplate for React.JS + Ethereum + Truffle project.
+<h4>2.4 Modification and finalisation of the frontend</h4>
+As we'll have a base frontend fairly quickly that's probably utilising HTML + JS (with a Truffle box), we want to update it to accomodate for the new functionalities and models that will be created in the meantime. This will serve as the base for some final testing.
