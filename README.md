@@ -25,7 +25,7 @@ This is the most important part of the project in terms of the innovation we are
 The patient incentive model serves as a way to motivate patient to share their data by increasing the remuneration they get. 
 This particular model is made to make sure the data has a proper format, by allowing a concurrent bot-free reviewing system of the data with another incentive for doing so.
 
-<h4>2.3 Calibration and details </h4>
+<h4>2.3 Calibration and details</h4>
 The two models being done at this point, we want to properly calibrate them and tweak the implementation before going further. As such, that step will mostly consists of modifications on files from the 2.1 and 2.2 chapters (which corresponds to work packages 2 and 3 in our project).
 
 <h4>2.4 Modification and finalisation of the frontend</h4>
