@@ -10,15 +10,14 @@ By providing data on the platform, a practitionner or research can buy the said 
 <h3>1. Current state of the project</h3>
 The current project contains a Ethereum implementation of a file sharing. 
 Even though it doesn't contain any form of our customisable incentive solution yet, it allows for a base to work on and to take inspiration from.
-The <a href="https://github.com/saren-io/ethereum-data-share">base work</a> was made by user jaykch, with the licences conditions available <a href="https://github.com/jaykch/ethereum-file-share/blob/master/LICENSE">here</a>.
+The <a href="https://github.com/saren-io/ethereum-data-share">base work</a> was made by user jaykch, with the licences conditions available <a href="https://github.com/jaykch/ethereum-file-share/blob/master/LICENSE">here</a>
 
 <h3>2. Upcoming work</h3>
-Based on the current implementation, we want to incrementially improve it by changing the core logic and adding our desired fonctionalities. 
-This project being part of a research, the possibility of adding the said functionalities will depend on criteria such as time, the capacity of the team, etc.
+Based on the current implementation, we are improving it by changing the core logic and adding our desired fonctionalities. 
+
 They are listed as follows : 
 
 <h4>2.1 Creation of the patient incentive model</h4>
-Based on the research that will be done in the third work package of our proposal, we will adapt the current implementation to support the selected technologies.
 This is the most important part of the project in terms of the innovation we are bringing to the field and the one that is going to take the most time during the project.
 
 <h4>2.2 Creation of the validator incentive model</h4>
@@ -26,7 +25,7 @@ The patient incentive model serves as a way to motivate patient to share their d
 This particular model is made to make sure the data has a proper format, by allowing a concurrent bot-free reviewing system of the data with another incentive for doing so.
 
 <h4>2.3 Calibration and details</h4>
-The two models being done at this point, we want to properly calibrate them and tweak the implementation before going further. As such, that step will mostly consists of modifications on files from the 2.1 and 2.2 chapters (which corresponds to work packages 2 and 3 in our project).
+The two models being done at this point, we properly calibrate them and tweak the implementation before going further. As such, that step will mostly consists of modifications on files from the 2.1 and 2.2 chapters.
 
 <h4>2.4 Modification and finalisation of the frontend</h4>
-As we'll have a base frontend fairly quickly that's probably utilising HTML + JS (with a Truffle box), we want to update it to accomodate for the new functionalities and models that will be created in the meantime. This will serve as the base for some final testing.
+As we have a base frontend that's probably utilising HTML + JS (with a Truffle box), This will serve as the base for some final testing.
